@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <5>;
+
     scroll-layers = <6>;
 
     // arrows {
@@ -109,10 +110,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &trans
-&kp SLASH                   &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EXCL  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans            &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans    &kp RIGHT_BRACKET  &kp NON_US_HASH   &trans            &trans            &trans
-&kp LS(NUMBER_3)            &kp LS(NUMBER_4)  &kp INT_YEN      &trans           &trans        &trans                       &trans    &trans                                                                   &trans
+&kp MINUS                   &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                     &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &trans
+&kp SLASH                   &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EXCL          &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans            &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NON_US_HASH   &trans            &trans            &trans
+&kp LS(NUMBER_3)            &kp LS(NUMBER_4)  &kp INT_YEN      &trans           &trans        &trans                       &trans            &trans                                                                   &trans
             >;
         };
 
