@@ -10,7 +10,6 @@
 
 &trackball {
     automouse-layer = <5>;
-    automouse-layer-timeout-ms = <8191>;
     scroll-layers = <6>;
 
     // arrows {
