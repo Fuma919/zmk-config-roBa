@@ -109,10 +109,10 @@
 
         ARROW {
             bindings = <
-&kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                &kp C_BRI_DN      &kp LG(UNDERSCORE)  &kp UP_ARROW    &kp LS(LG(SEMICOLON))  &kp C_BRI_UP
-&kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp INTERNATIONAL_1      &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp C_VOL_UP
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT              &kp C_REWIND  &kp K_PLAY_PAUSE  &kp TAB             &kp GRAVE       &trans                 &trans
-&kp HASH   &kp DOLLAR    &kp INT_YEN   &trans        &kp LEFT_GUI     &kp LSHIFT               &trans        &trans                                                                       &trans
+&kp MINUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                &kp C_BRI_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(PLUS)     &kp C_BRI_UP
+&kp SLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp INTERNATIONAL_1      &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_UP
+&kp PERCENT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp CARET                &kp C_REWIND  &kp K_PLAY_PAUSE  &kp TAB         &kp GRAVE       &trans           &trans
+&kp HASH     &kp DOLLAR    &kp INT_YEN   &trans        &kp LEFT_GUI     &kp LSHIFT               &trans        &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
