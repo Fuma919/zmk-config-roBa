@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -110,10 +109,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)                                         &kp C_BRI_DN      &kp LG(UNDERSCORE)  &kp UP_ARROW    &kp LS(LG(SEMICOLON))  &kp C_BRI_UP
-&kp HOME        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(APOS)  &kp INTERNATIONAL_1      &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp C_VOL_UP
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER     &trans                   &kp C_REWIND  &kp K_PLAY_PAUSE  &kp TAB             &kp GRAVE       &trans                 &trans
-&trans          &trans        &trans        &trans        &kp LEFT_GUI  &kp LSHIFT               &trans        &trans                                                                       &trans
+&kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                &kp C_BRI_DN      &kp LG(UNDERSCORE)  &kp UP_ARROW    &kp LS(LG(SEMICOLON))  &kp C_BRI_UP
+&kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp INTERNATIONAL_1      &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp C_VOL_UP
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT              &kp C_REWIND  &kp K_PLAY_PAUSE  &kp TAB             &kp GRAVE       &trans                 &trans
+&kp HASH   &kp DOLLAR    &kp INT_YEN   &trans        &kp LEFT_GUI     &kp LSHIFT               &trans        &trans                                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -121,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
+&trans  &trans  &trans  &trans                  &trans                                    &trans                  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans        &trans              &trans  &trans                  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans        &trans              &trans  &trans                  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &lt_to_layer_0 0 LANG2  &kp LEFT_GUI  &kp LEFT_SHIFT      &trans  &lt_to_layer_0 0 LANG1                            &trans
             >;
         };
 
