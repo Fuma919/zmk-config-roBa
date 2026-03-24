@@ -9,7 +9,8 @@
 };
 
 &trackball {
-    input-processors = <&zip_temp_layer 5 10000>;
+    automouse-layer = <5>;
+    automouse-layer-timeout-ms = <8191>;
     scroll-layers = <6>;
 
     // arrows {
