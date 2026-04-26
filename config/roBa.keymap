@@ -86,10 +86,10 @@
 
         NUM_SYM {
             bindings = <
-&kp MINUS  &kp N7      &kp N8       &kp N9  &kp KP_PLUS                                &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
-&kp SLASH  &kp N4      &kp N5       &kp N6  &kp KP_MULTIPLY  &kp EQUAL       &kp EXCL  &kp SINGLE_QUOTE  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
-&kp N0     &kp N1      &kp N2       &kp N3  &kp KP_EQUAL     &kp LS(N5)      &trans    &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
-&kp HASH   &kp DOLLAR  &kp INT_YEN  &trans  &trans           &trans          &trans    &trans                                                                   &trans
+&kp MINUS  &kp N7      &kp N8       &kp N9  &kp KP_PLUS                                        &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
+&kp SLASH  &kp N4      &kp N5       &kp N6  &kp KP_MULTIPLY  &kp EQUAL       &kp EXCL          &kp APOS          &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
+&kp N0     &kp N1      &kp N2       &kp N3  &kp KP_EQUAL     &kp LS(N5)      &kp SINGLE_QUOTE  &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
+&kp HASH   &kp DOLLAR  &kp INT_YEN  &trans  &trans           &trans          &trans            &trans                                                                   &trans
             >;
         };
 
