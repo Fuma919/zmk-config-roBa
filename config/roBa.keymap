@@ -57,10 +57,10 @@
 
         default_layer {
             bindings = <
-&lt 7 Q    &kp W      &kp E         &kp R                   &kp T                                                            &kp Y                   &kp U  &lt 6 I    &kp O    &kp P
-&kp A      &kp S      &kp D         &kp F                   &kp G               &kp INTERNATIONAL_1      &kp SLASH           &kp H                   &kp J  &kp K      &kp L    &kp ENTER
-&kp Z      &kp X      &kp C         &kp V                   &kp B               &lt 2 SEMICOLON          &lt 3 LEFT_BRACKET  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LCTRL  &kp SPACE  &kp LEFT_ALT  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB       &kp BACKSPACE       &lt_to_layer_0 4 LANG1                             &kp ESCAPE
+&lt 7 Q    &kp W      &kp E         &kp R                   &kp T                                                          &kp Y                   &kp U  &lt 6 I    &kp O    &kp P
+&kp A      &kp S      &kp D         &kp F                   &kp G               &kp INTERNATIONAL_1      &kp SLASH         &kp H                   &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X      &kp C         &kp V                   &kp B               &kp SEMI                 &kp LEFT_BRACKET  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LCTRL  &kp SPACE  &kp LEFT_ALT  &lt_to_layer_0 2 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB       &kp BACKSPACE     &lt_to_layer_0 3 LANG1                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -71,11 +71,11 @@
 &trans        &trans  &trans  &trans              &trans                                      &trans            &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &trans  &trans  &lt 3 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans      &trans  &lt 4 INT_HENKAN                          &trans
+&kp LEFT_GUI  &trans  &trans  &lt 2 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans      &trans  &lt 2 INT_HENKAN                          &trans
             >;
         };
 
-        FUNCTION {
+        ARR_FUNC {
             bindings = <
 &kp C_BRI_DN         &kp LG(MINUS)   &kp UP_ARROW  &kp LG(LS(SEMI))  &kp C_BRI_UP                                        &kp F1                &kp F2           &kp F3  &kp F4  &kp F5
 &kp C_VOL_DN         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW   &kp C_VOL_UP  &kp C_MUTE      &kp LS(LG(NUMBER_3))  &kp F6                &kp F7           &kp F8  &kp F9  &kp F10
@@ -84,16 +84,16 @@
             >;
         };
 
-        NUM {
+        NUM_SYM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
-&kp SLASH                   &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EXCL  &kp SINGLE_QUOTE  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans    &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
-&kp LS(NUMBER_3)            &kp LS(NUMBER_4)  &kp INT_YEN      &trans           &trans        &trans                       &trans    &trans                                                                   &trans
+&kp MINUS  &kp N7      &kp N8       &kp N9  &kp KP_PLUS                                &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
+&kp SLASH  &kp N4      &kp N5       &kp N6  &kp KP_MULTIPLY  &kp EQUAL       &kp EXCL  &kp SINGLE_QUOTE  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
+&kp N0     &kp N1      &kp N2       &kp N3  &kp KP_EQUAL     &kp LS(N5)      &trans    &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
+&kp HASH   &kp DOLLAR  &kp INT_YEN  &trans  &trans           &trans          &trans    &trans                                                                   &trans
             >;
         };
 
-        ARROW {
+        legacy_ARROW {
             bindings = <
 &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                          &kp C_BRI_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(LS(SEMI))  &kp C_BRI_UP
 &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp EQUAL             &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_GUI
@@ -128,6 +128,15 @@
 &trans  &trans        &trans        &trans        &tog 1  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        legacy_number {
+            bindings = <
+&kp MINUS                   &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
+&kp SLASH                   &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EXCL  &kp SINGLE_QUOTE  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans    &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
+&kp LS(NUMBER_3)            &kp LS(NUMBER_4)  &kp INT_YEN      &trans           &trans        &trans                       &trans    &trans                                                                   &trans
             >;
         };
     };
