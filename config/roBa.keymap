@@ -57,10 +57,10 @@
 
         default_layer {
             bindings = <
-&lt 7 Q    &kp W      &kp E             &kp R                   &kp T                                                       &kp Y                   &kp U  &lt 6 I    &kp O    &kp P
-&kp A      &kp S      &kp D             &kp F                   &kp G               &kp INTERNATIONAL_1      &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
-&kp Z      &kp X      &kp C             &kp V                   &kp B               &lt 2 LEFT_BRACE         &kp SEMI       &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LCTRL  &kp SPACE  &mt LEFT_ALT TAB  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB       &kp BACKSPACE  &lt_to_layer_0 3 LANG1                             &kp ESCAPE
+&lt 7 Q    &kp W      &kp E             &kp R                   &kp T                                                      &kp Y                   &kp U  &lt 6 I    &kp O    &kp P
+&kp A      &kp S      &kp D             &kp F                   &kp G               &kp UNDER               &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X      &kp C             &kp V                   &kp B               &lt 2 AT                &kp SEMI       &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LCTRL  &kp SPACE  &mt LEFT_ALT TAB  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB      &kp BACKSPACE  &lt_to_layer_0 3 LANG1                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -86,19 +86,19 @@
 
         NUM_SYM {
             bindings = <
-&kp MINUS  &kp N7      &kp N8       &kp N9  &kp KP_PLUS                                        &kp LS(NUMBER_7)  &kp LESS_THAN      &kp GREATER_THAN  &kp LS(NUMBER_2)  &trans
-&kp SLASH  &kp N4      &kp N5       &kp N6  &kp KP_MULTIPLY  &kp EQUAL       &kp EXCL          &kp APOS          &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &trans            &trans
-&kp N0     &kp N1      &kp N2       &kp N3  &kp KP_EQUAL     &kp LS(N5)      &kp SINGLE_QUOTE  &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp NUHS          &trans            &kp TILDE
-&kp HASH   &kp DOLLAR  &kp INT_YEN  &trans  &trans           &trans          &trans            &trans                                                                   &trans
+&kp MINUS  &kp N7      &kp N8       &kp N9  &kp PLUS                                 &kp SQT   &kp LESS_THAN     &kp GREATER_THAN   &kp LS(SQT)  &trans
+&kp SLASH  &kp N4      &kp N5       &kp N6  &kp ASTERISK  &kp CARET        &kp EXCL  &trans    &kp LS(N9)        &kp LS(N0)         &trans       &trans
+&kp N0     &kp N1      &kp N2       &kp N3  &kp EQUAL     &kp PERCENT      &trans    &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &kp TILDE
+&kp HASH   &kp DOLLAR  &kp INT_YEN  &trans  &trans        &trans           &trans    &trans                                                      &trans
             >;
         };
 
         legacy_ARROW {
             bindings = <
-&kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                          &kp C_BRI_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(LS(SEMI))  &kp C_BRI_UP
-&kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp EQUAL             &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_GUI
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp LS(NUMBER_5)      &kp C_REWIND  &kp C_PLAY_PAUSE  &kp TAB         &kp GRAVE       &trans            &kp C_VOL_UP
-&kp HASH      &kp DOLLAR    &kp INT_YEN   &trans        &trans           &trans                &trans        &trans                                                              &trans
+&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                     &kp C_BRI_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(LS(SEMI))  &kp C_BRI_UP
+&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &kp K_MUTE    &kp C_VOL_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_GUI
+&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &kp C_REWIND  &kp C_PLAY_PAUSE  &kp TAB         &kp GRAVE       &trans            &kp C_VOL_UP
+&kp HASH       &kp DOLLAR    &kp INT_YEN   &trans        &trans           &trans           &trans        &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
