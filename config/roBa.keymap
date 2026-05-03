@@ -36,7 +36,7 @@
 
         dpi_slow {
             layers = <6>;
-            input-processors = <&zip_xy_scaler 1 8>;
+            input-processors = <&zip_xy_scaler 1 16>;
         };
     };
 
