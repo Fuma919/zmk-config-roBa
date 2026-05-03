@@ -30,12 +30,15 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 5 10000>; };
 
 / {
-    trackball_dpi_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
+trackball_dpi_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+    
+    dpi_slow {
         layers = <8>;
         input-processors = <&zip_xy_scaler 1 4>;
     };
+};
 
     combos { compatible = "zmk,combos"; };
 
