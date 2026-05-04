@@ -98,8 +98,8 @@
 
         WDW_SYM {
             bindings = <
-&trans      &kp LS(LA(LC(W)))  &kp LA(LC(UP))    &kp LS(LA(LC(F)))  &kp LS(LA(LC(D)))                        &kp SQT    &kp LESS_THAN     &kp GREATER_THAN   &kp LS(SQT)  &trans
-&kp LSHIFT  &kp LA(LC(LEFT))   &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &trans             &trans      &kp EXCL  &kp UNDER  &kp LS(N9)        &kp LS(N0)         &kp CAPS     &trans
+&trans      &kp LS(LA(LC(W)))  &kp LA(LC(UP))    &kp LS(LA(LC(F)))  &kp LS(LA(LC(D)))                        &kp SQT    &kp LESS_THAN     &kp GREATER_THAN   &kp LS(SQT)  &kp LEFT_PARENTHESIS
+&kp LSHIFT  &kp LA(LC(LEFT))   &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &trans             &trans      &kp EXCL  &kp UNDER  &kp LS(N9)        &kp LS(N0)         &kp CAPS     &kp RIGHT_PARENTHESIS
 &trans      &trans             &trans            &trans             &trans             &trans      &trans    &kp AMPS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &kp TILDE
 &trans      &trans             &trans            &trans             &trans             &trans      &trans    &trans                                                       &trans
             >;
