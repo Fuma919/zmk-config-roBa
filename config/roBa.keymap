@@ -81,7 +81,7 @@
 &trans        &trans  &trans  &trans              &trans                                      &trans            &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &trans  &trans  &lt 2 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans      &trans  &lt 2 INT_HENKAN                          &trans
+&kp LEFT_GUI  &trans  &trans  &lt 3 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans      &trans  &lt 4 INT_HENKAN                          &trans
             >;
         };
 
