@@ -74,10 +74,10 @@
 
         default_layer {
             bindings = <
-&lt 8 Q    &kp W      &kp E             &kp R                   &kp T                                                           &kp Y                   &kp U  &lt 7 I    &kp O    &kp P
-&kp A      &kp S      &kp D             &kp F                   &kp G               &kp LANG_ZENKAKUHANKAKU      &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &lt 6 ENTER
-&kp Z      &kp X      &kp C             &kp V                   &kp B               &lt 2 AT                     &kp SEMI       &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LCTRL  &kp SPACE  &mt LEFT_ALT TAB  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB           &kp BACKSPACE  &lt_to_layer_0 4 LANG1                             &kp ESCAPE
+&lt 8 Q    &kp W      &kp E             &kp R                   &kp T                                                      &kp Y                   &kp U  &lt 7 I    &kp O    &kp P
+&kp A      &kp S      &kp D             &kp F                   &kp G               &kp GLOBE               &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &lt 6 ENTER
+&kp Z      &kp X      &kp C             &kp V                   &kp B               &lt 2 AT                &kp SEMI       &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LCTRL  &kp SPACE  &mt LEFT_ALT TAB  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB      &kp BACKSPACE  &lt_to_layer_0 4 LANG1                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -85,10 +85,10 @@
 
         WIN {
             bindings = <
-&trans        &trans  &trans  &trans              &trans                                      &trans            &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans              &trans                  &trans      &trans  &trans            &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &trans  &trans  &lt 3 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans      &trans  &lt 4 INT_HENKAN                          &trans
+&trans        &trans  &trans  &trans              &trans                                                       &trans            &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans              &trans                  &kp LANG_ZENKAKUHANKAKU      &trans  &trans            &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans              &trans                  &trans                       &trans  &trans            &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &trans  &trans  &lt 3 INT_MUHENKAN  &mt LEFT_CONTROL SPACE  &trans                       &trans  &lt 4 INT_HENKAN                          &trans
             >;
         };
 
