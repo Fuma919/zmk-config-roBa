@@ -47,6 +47,16 @@
             bindings = <&lt 6 RIGHT_CONTROL>;
             key-positions = <7 8>;
         };
+
+        mac_eng {
+            bindings = <&kp LANG2>;
+            key-positions = <11 12>;
+        };
+
+        mac_jpn {
+            bindings = <&kp LANG1>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
@@ -103,8 +113,8 @@
 
         WDW_SYM {
             bindings = <
-&kp LS(LC(LA(Q)))  &kp LS(LA(LC(W)))  &kp LC(LS(E))      &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                        &kp SQT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(SQT)  &kp LC(LA(P))
-&kp LEFT_ALT       &kp LC(LS(S))      &kp LC(LS(D))      &kp LC(LS(F))      &trans             &trans      &kp EXCL  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CAPS     &trans
+&kp LS(LC(LA(Q)))  &kp LS(LA(LC(W)))  &kp LC(LS(E))      &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                        &kp SQT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(SQT)  &kp BACKSLASH
+&kp LEFT_ALT       &kp LC(LS(S))      &kp LC(LS(D))      &kp LC(LS(F))      &trans             &trans      &kp EXCL  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CAPS     &trans
 &trans             &trans             &kp LS(LA(LC(C)))  &trans             &trans             &trans      &trans    &kp AMPS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp TILDE
 &kp LA(LC(F5))     &kp C_BRI_DN       &kp C_BRI_UP       &trans             &trans             &trans      &kp DEL   &trans                                                               &trans
             >;
@@ -154,6 +164,15 @@
 &trans  &kp N4        &trans             &trans             &tog 1  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3       &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans             &trans             &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
