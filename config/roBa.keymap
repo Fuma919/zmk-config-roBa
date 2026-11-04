@@ -74,8 +74,8 @@
 
         default_layer {
             bindings = <
-&lt 8 Q    &kp W      &kp E             &kp R                   &kp T                                                      &kp Y                   &kp U  &lt 7 I    &kp O    &kp P
-&kp A      &kp S      &kp D             &kp F                   &kp G               &kp GLOBE               &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &lt 6 ENTER
+&lt 8 Q    &kp W      &kp E             &kp R                   &kp T                                                      &kp Y                   &kp U  &lt 7 I    &lt 6 O  &kp P
+&kp A      &kp S      &kp D             &kp F                   &kp G               &kp GLOBE               &kp SLASH      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
 &kp Z      &kp X      &kp C             &kp V                   &kp B               &lt 2 AT                &kp SEMI       &kp N                   &kp M  &kp COMMA  &kp DOT  &kp MINUS
 &kp LCTRL  &kp SPACE  &mt LEFT_ALT TAB  &lt_to_layer_0 3 LANG2  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT TAB      &kp BACKSPACE  &lt_to_layer_0 4 LANG1                             &kp ESCAPE
             >;
@@ -112,10 +112,10 @@
 
         NUM_ARR {
             bindings = <
-&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                 &kp C_VOL_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(PLUS)     &kp C_VOL_UP
-&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &trans    &kp C_MUTE        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_GUI
-&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &kp C_RW  &kp C_PLAY_PAUSE  &kp TAB         &kp SPACE       &kp GRAVE        &kp C_BRI_UP
-&kp HASH       &kp DOLLAR    &kp LA(Y)     &trans        &trans           &trans           &trans    &trans                                                             &kp C_BRI_DN
+&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                               &kp C_VOL_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(PLUS)     &kp C_VOL_UP
+&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &trans  &kp C_MUTE        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_GUI
+&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &trans  &kp C_PLAY_PAUSE  &trans          &trans          &trans           &kp C_BRI_UP
+&kp HASH       &kp DOLLAR    &trans        &trans        &trans           &trans           &trans  &trans                                                             &kp C_BRI_DN
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -123,7 +123,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &kp O   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
