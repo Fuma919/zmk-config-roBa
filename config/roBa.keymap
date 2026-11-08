@@ -104,30 +104,30 @@
 
         ARR_FN {
             bindings = <
-&kp CAPS      &trans          &kp UP_ARROW  &trans           &trans                                    &kp F1                &kp F2           &kp F3  &kp F4  &kp F5
-&kp LEFT_ALT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans  &trans      &kp LS(LG(NUMBER_3))  &kp F6                &kp F7           &kp F8  &kp F9  &kp F10
-&trans        &trans          &trans        &trans           &trans  &trans      &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp PRINTSCREEN  &trans  &trans  &kp F11
-&trans        &trans          &trans        &trans           &trans  &trans      &trans                &trans                                                 &kp F12
+&kp CAPS      &trans          &kp UP_ARROW  &trans           &trans                                    &kp KP_MINUS     &kp N7  &kp N8  &kp N9  &kp KP_PLUS
+&kp LEFT_ALT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans  &trans      &trans                &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &trans
+&trans        &trans          &trans        &trans           &trans  &trans      &kp LS(LG(NUMBER_4))  &kp N0           &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans        &trans          &trans        &trans           &trans  &trans      &trans                &trans                                   &kp DOT
             >;
         };
 
         NUM_SYM {
             bindings = <
-&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                 &kp APOS        &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &kp EXCL  &kp GRAVE       &trans             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &kp AMPS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans                &trans                 &kp TILDE
-&kp HASH       &kp DOLLAR    &trans        &trans        &trans           &trans           &trans    &trans                                                                          &trans
+&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                                  &kp APOS   &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &kp EXCL   &kp GRAVE  &trans             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &kp CARET  &kp AMPS   &kp DOLLAR         &trans                &trans                 &kp TILDE
+&kp HASH       &kp DOLLAR    &trans        &trans        &trans           &trans           &trans     &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        WDW_SYM {
+        WDW_FN {
             bindings = <
-&kp LS(LC(LA(Q)))    &kp LS(LA(LC(W)))  &kp LC(LS(E))      &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                        &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp LEFT_ALT         &kp LC(LS(S))      &kp LC(LS(D))      &kp LC(LS(F))      &kp C_PLAY_PAUSE   &trans      &kp EXCL  &kp GRAVE       &trans             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp C_VOICE_COMMAND  &trans             &kp LS(LA(LC(C)))  &kp C_VOL_DN       &kp C_VOL_UP       &trans      &kp AMPS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans                &trans                 &kp TILDE
-&kp LA(LC(F5))       &kp C_BRI_DN       &kp C_BRI_UP       &trans             &trans             &trans      &kp DEL   &trans                                                                          &trans
+&kp LS(LC(LA(Q)))    &kp LS(LA(LC(W)))  &kp LC(LS(E))      &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))                              &kp F1          &kp F2           &kp F3  &kp F4  &kp F5
+&kp LEFT_ALT         &kp LC(LS(S))      &kp LC(LS(D))      &kp LC(LS(F))      &kp C_PLAY_PAUSE   &trans      &kp LG(LS(N3))  &kp F6          &kp F7           &kp F8  &kp F9  &kp F10
+&kp C_VOICE_COMMAND  &trans             &kp LS(LA(LC(C)))  &kp C_VOL_DN       &kp C_VOL_UP       &trans      &kp LG(LS(N4))  &kp LG(LS(N5))  &kp PRINTSCREEN  &trans  &trans  &kp F11
+&kp LA(LC(F5))       &kp C_BRI_DN       &kp C_BRI_UP       &trans             &trans             &trans      &kp DEL         &trans                                           &kp F12
             >;
         };
 
@@ -174,17 +174,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-        };
-
-        layer_10 {
-            bindings = <
-&kp KP_MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                               &kp C_VOL_DN      &kp LG(MINUS)   &kp UP_ARROW    &kp LG(PLUS)     &kp C_VOL_UP
-&kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &trans  &kp C_MUTE        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_GUI
-&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL     &kp PERCENT      &trans  &kp C_PLAY_PAUSE  &trans          &trans          &trans           &kp C_BRI_UP
-&kp HASH       &kp DOLLAR    &trans        &trans        &trans           &trans           &trans  &trans                                                             &kp C_BRI_DN
-            >;
-
-            sensor-bindings = <&inc_dec_kp (LC(PAGE_UP)) LC(PAGE_DOWN)>;
         };
     };
 };
